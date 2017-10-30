@@ -95,6 +95,3 @@ class WhatsappLanguageModel(object):
             sent.append(word)
             word = self._author_cfd[author][word].max()
         return " ".join(sent)
-
-
-WALM = WhatsappLanguageModel("./_chat.txt")
